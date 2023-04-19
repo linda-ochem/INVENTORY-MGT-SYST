@@ -12,18 +12,18 @@ To delete a single section: Send a **DELETE** request to 'http://localhost:4500/
 
 To create a section:  Send a **POST** request to 'http://localhost:4500/api/section/' coupled with a request body in JSON format.
 to create a section, you need to provide these inputs;
-*Location_Id:       |     Type Of Number        |  Required
-*Plant_section:     |     Type Of Number        |  Required
-*Common_name:       |     Type Of String        |  Required    
-*Name:              |     Type Of String        |  Required
-*Type:              |     Type Of String        |  Required
-*Vendor:            |     Type Of String        |  Required
-*Model:             |     Type Of String        |  Required
-*Spares_Id:         |     Type Of Number        |  Required
-*Description:       |    Type of String         |  Required
-*Name_Tag:          |     Type Of String        |  Required
-*Quantity:          |     Type Of Number        |  Required
-*plant:             |     Type Of String        |  Required
+*Location_Id:            Type Of Number          Required
+*Plant_section:          Type Of Number          Required
+*Common_name:            Type Of String          Required    
+*Name:                   Type Of String          Required
+*Type:                   Type Of String          Required
+*Vendor:                 Type Of String          Required
+*Model:                  Type Of String          Required
+*Spares_Id:              Type Of Number          Required
+*Description:            Type of String          Required
+*Name_Tag:               Type Of String          Required
+*Quantity:               Type Of Number          Required
+*plant:                  Type Of String          Required
 
 when all inputs are provided and sent, if succesfull, you would recieve a 200 status code to show for it.
 
