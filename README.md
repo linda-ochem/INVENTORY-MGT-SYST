@@ -66,6 +66,31 @@ to create a section, you need to provide these inputs;
 
 
 when all inputs are provided and sent, if succesfull, you would recieve a *200* status code to show for it.
+The response would be in a *JSON* format.
+
+Below is an example of a response to the create section as received from *POSTMAN*
+
+```javascript
+{
+    "Location_Id": 1,
+    "Plant_section": "Section-2",
+    "Common_name": "Spanner",
+    "Name": "Tool",
+    "Type": "Building Tool",
+    "Vendor": "Hisense",
+    "Model": "SER452T",
+    "Spares_Id": 342,
+    "Description": "None Given",
+    "Name_Tag": "Hamer Tool",
+    "Quantity": 200,
+    "plant": "Plant-one",
+    "_id": "645528c6c5de1f12876b4e6f",
+    "createdAt": "2023-05-05T16:03:18.432Z",
+    "updatedAt": "2023-05-05T16:03:18.432Z",
+    "__v": 0
+}
+
+```
 
 If any field is missing, you get an error saying *some required field are missing*, review the inputs and try again.
 
