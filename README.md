@@ -12,7 +12,8 @@
 
 - To create a section:  Send a **POST** request to 'http://localhost:4500/api/section/' coupled with a request body in JSON format.
 to create a section, you need to provide these inputs;
-```
+```javascript
+{
   Location_Id:{
     type: Number,
     required: true}
@@ -60,6 +61,7 @@ to create a section, you need to provide these inputs;
   plant:{
     type: String,
     required: true}
+    }
 ```
 
 
