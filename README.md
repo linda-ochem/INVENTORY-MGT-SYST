@@ -13,56 +13,53 @@
 - To create a section:  Send a **POST** request to 'http://localhost:4500/api/section/' coupled with a request body in JSON format.
 to create a section, you need to provide these inputs;
 ```
-const Section = new Schema({
   Location_Id:{
     type: Number,
-    required: true
-  },
+    required: true}
+
   Plant_section:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Common_name:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Name:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Type:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Vendor:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Model:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Spares_Id:{
     type: Number,
-    required: true
-  },
+    required: true}
+
   Description:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Name_Tag:{
     type: String,
-    required: true
-  },
+    required: true}
+
   Quantity:{
     type: Number,
-    required: true
-  },
+    required: true}
+
   plant:{
     type: String,
-    required: true
-  }
-},{timestamps: true})
+    required: true}
 ```
 
 
