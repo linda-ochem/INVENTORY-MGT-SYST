@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: linda
+      MONGO_INITDB_ROOT_PASSWORD: Zitachi1
+    networks:
+      - app-network
+
+  nodejs:
+    build: .
+    restart: always
+    ports:
+      - "8080:4500"
+    environment:
+      MONGODB_URI: mongodb+srv://Linda:Zitachi1@cluster0.dg2xqt2.mongodb.net/?retryWrites=true&w=majority
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  mongodb_data:
